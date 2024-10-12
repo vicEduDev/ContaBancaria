@@ -14,6 +14,7 @@ public class ContaTerminal{
         System.out.println("Insira o número da sua conta: ");
         numero = scan.nextInt();
         System.out.println("Sua conta é: "+numero);
+        scan.nextLine();//Limpando buffer
 
         //Inserir agencia
         System.out.println("Insira a sua Agência: ");
@@ -30,8 +31,7 @@ public class ContaTerminal{
         saldo = scan.nextFloat();
         System.out.println("Sua conta é: "+saldo);
 
-        //Fecha o scanner
-        scan.close();
+        
 
         System.out.println("Olá "+nomeCliente+", obrigado por criar uma conta em nosso banco, sua agência é "+agencia+", conta "+numero+" e seu saldo "+saldo+" já está disponível para saque!");
         
